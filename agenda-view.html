@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <!-- Use the commented out script/link tags if testing locally
+    <script src="javascript/moment.min.js"></script>
+    <script src="javascript/calagator-widget.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/calagator-widget.css" />
+    -->
+    <script src="http://rawgit.com/dhedlund/calagator-widget-js/master/javascript/moment.min.js"></script>
+    <script src="http://rawgit.com/dhedlund/calagator-widget-js/master/javascript/calagator-widget.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://rawgit.com/dhedlund/calagator-widget-js/master/css/calagator-widget.css" />
+  </head>
+  <body>
+    <div class="calagator-events" data-url="http://calagator.org/events" data-days="14">
+      <div class="loading">Loading...</div>
+      <ul class="events">
+        <li class="event">
+          <div>
+            <a class="show-link" href="#">
+              <span class="title" data-limit="100"></span>
+            </a>
+          </div>
+          <div>
+            <!-- For a list of date formats, see http://momentjs.com/docs/#/displaying/ -->
+            <span class="start-time" data-format="L @ LT"></span>
+            <span class="time-venue-sep">//</span>
+            <span class="venue-title"></span>
+          </div>
+
+          <p class="description" data-limit="300"></p>
+
+          <!-- Other fields available:
+          <div class="url"></div>
+          <span class="end-time" data-format="L @ LT"></span>
+          <p class="description" data-limit="100"></p>
+          -->
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      var container = document.querySelector('.calagator-events')
+      CalagatorWidget.forElement(container).load();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.calagator-events {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-size: 12px;
+}
+
+.calagator-events li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.calagator-events a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.calagator-events a:link, a:active {
+  font-weight: bold;
+  color: #66baa9;
+}
+
+.calagator-events a:hover {
+  font-weight: bold;
+  color: #77cbba;
+}
+
+.calagator-events a:visited {
+  font-weight: bold;
+  color: #59a12d;
+}
+
+.calagator-events .time-venue-sep {
+  padding: 0px 5px;
+  font-weight: bold;
+  color: #bbbbbb;
+}
+
+.calagator-events .start-time {
+}
+
+.calagator-events .venue-title {
+  font-style: italic;
+  color: #444444;
+}
+
+.calagator-events .description {
+  margin-top: 0px;
+  font-size: 11px;
+  color: #888888;
+}
